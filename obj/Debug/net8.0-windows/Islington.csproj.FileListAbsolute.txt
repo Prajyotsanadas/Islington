@@ -41,3 +41,4 @@ C:\Users\Dell\Desktop\islington\Islington\obj\Debug\net8.0-windows\Islington.Sys
 C:\Users\Dell\Desktop\islington\Islington\obj\Debug\net8.0-windows\Islington.UserManagement.resources
 C:\Users\Dell\Desktop\islington\Islington\obj\Debug\net8.0-windows\Islington.AuditLogs.resources
 C:\Users\Dell\Desktop\islington\Islington\obj\Debug\net8.0-windows\Islington.ReportsAndAnalytics.resources
+C:\Users\Dell\Desktop\islington\Islington\obj\Debug\net8.0-windows\Islington.sourcelink.json

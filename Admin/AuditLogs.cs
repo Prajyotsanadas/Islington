@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.SQLite;
 using System.Windows.Forms;
 
 namespace Islington
@@ -7,6 +8,8 @@ namespace Islington
     public partial class AuditLogs : Form
     {
         private SQLiteConnectionManager dbManager;
+        private DataTable logsTable;
+        private SQLiteDataAdapter dataAdapter;
 
         public AuditLogs()
         {
@@ -22,7 +25,10 @@ namespace Islington
         private void LoadLogs()
         {
             string query = "SELECT * FROM AuditLogs ORDER BY Timestamp DESC";
-            DataTable logsTable = dbManager.ExecuteQuery(query);
+            dataAdapter = new SQLiteDataAdapter(query, dbManager.ConnectionString);
+            SQLiteCommandBuilder commandBuilder = new SQLiteCommandBuilder(dataAdapter);
+            logsTable = new DataTable();
+            dataAdapter.Fill(logsTable);
             dgvLogs.DataSource = logsTable;
         }
 
@@ -33,7 +39,16 @@ namespace Islington
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(e);
+            try
+            {
+                // Commit changes to the database
+                dataAdapter.Update(logsTable);
+                MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving changes: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

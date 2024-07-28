@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Islington")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cb66f369fb4bcd648ab9f667caf59e43ba44807")]
 [assembly: System.Reflection.AssemblyProductAttribute("Islington")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Islington")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
