@@ -29,9 +29,6 @@ namespace Islington
                 case "System Usage Report":
                     reportData = GenerateSystemUsageReport();
                     break;
-                case "Business Performance Report":
-                    reportData = GenerateBusinessPerformanceReport();
-                    break;
                 case "User Activity Report":
                     reportData = GenerateUserActivityReport();
                     break;
