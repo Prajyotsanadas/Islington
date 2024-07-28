@@ -70,6 +70,7 @@
             // 
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvLogs);
             this.Controls.Add(this.lblTitle);
             this.Name = "AuditLogs";
