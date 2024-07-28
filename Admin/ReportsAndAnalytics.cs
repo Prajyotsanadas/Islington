@@ -44,7 +44,6 @@
             this.cbReportType.FormattingEnabled = true;
             this.cbReportType.Items.AddRange(new object[] {
             "System Usage Report",
-            "Business Performance Report",
             "User Activity Report"});
             this.cbReportType.Location = new System.Drawing.Point(150, 80);
             this.cbReportType.Name = "cbReportType";

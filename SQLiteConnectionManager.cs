@@ -18,6 +18,8 @@ namespace Islington
             InitializeDatabase();
         }
 
+        public string ConnectionString => connectionString;
+
         private void InitializeDatabase()
         {
             if (!File.Exists(databaseFile))
@@ -147,4 +149,3 @@ namespace Islington
         }
     }
 }
- 
