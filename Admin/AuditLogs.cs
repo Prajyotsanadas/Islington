@@ -33,7 +33,7 @@ namespace Islington
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(sender, e);
+            Console.WriteLine(e);
         }
     }
 }
