@@ -6,6 +6,7 @@
         private Label lblTitle;
         private DataGridView dgvLogs;
         private Button btnRefresh;
+        private Button btnSave;
 
         protected override void Dispose(bool disposing)
         {
@@ -21,6 +22,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.dgvLogs = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogs)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +68,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+            //
+            // Button save
+            //
+            this.btnSave.Location = new System.Drawing.Point(200, 380);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(100, 30);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+
         }
     }
 }
